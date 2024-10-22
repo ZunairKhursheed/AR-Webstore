@@ -15,7 +15,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
     overflowX: "hidden",
     posterColor: "#eee",
     width: "100%",
-    height: ARSupported ? "85%" : "75%",
+    height: "100%",
     borderRadius: 15,
   };
 
