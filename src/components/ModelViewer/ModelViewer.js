@@ -132,19 +132,15 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
             <Help />
           </>
         ) : (
-          <>
-            <button className="help-btn" onClick={() => setDisplay(true)}>
-              ?<span>help</span>
-            </button>
-          </>
+          <></>
         )}
 
-        <button
+        {/* <button
           className="annotate-btn"
           onClick={() => setAnnotate((prevState) => !prevState)}
         >
           i
-        </button>
+        </button> */}
 
         {annotate &&
           item.annotations.map((annotate, idx) => (
