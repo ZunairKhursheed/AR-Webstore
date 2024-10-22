@@ -12,6 +12,7 @@ import SignUp from "./components/SignUp/SignUp";
 import SignIn from "./components/SignIn/Signin";
 import WishList from "./components/Wishlist/WishList";
 import { useState } from "react";
+import { SheenChair } from "./components/3dModals/SheenChair";
 
 const App = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -26,7 +27,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route
             path="/"
@@ -38,6 +39,7 @@ const App = () => {
               />
             }
           />
+          <Route path="/sheenchair" element={<SheenChair />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route
@@ -51,7 +53,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );
