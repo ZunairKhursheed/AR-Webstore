@@ -247,8 +247,8 @@
 }
 
 .model-view {
-  width: 100%;
-  aspect-ratio: 680/510;
+  width: 100vw;
+  height: 75vw;
 }
 
 .fullscreen-mob {
